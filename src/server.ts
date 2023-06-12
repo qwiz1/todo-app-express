@@ -11,12 +11,12 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(express.json());
 
-app.use('/', (_req, res) => {
+app.get('/', (_req, res) => {
   res.json({ message: '🔥🚀☄️' });
 });
 
-const server = app.listen(process.env.PORT || 4200, () =>
-  console.log(`Server  started on port ${process.env.PORT || 4200}`),
+const server = app.listen(process.env.PORT, () =>
+  console.log(`Server  started on port ${process.env.PORT}`),
 );
 
 export { app, server };
