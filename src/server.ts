@@ -10,4 +10,4 @@ const server = app.listen(4200, () =>
   console.log(`Server  started on port ${4200}`),
 );
 
-export { server };
+export default server;
