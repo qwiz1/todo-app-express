@@ -24,9 +24,6 @@ rules:
   arrow-parens:
     - error
     - always
-  '@typescript-eslint/explicit-function-return-type':
-    - error
-    - allowTypedFunctionExpressions: true
   '@typescript-eslint/quotes':
     - error
     - single
