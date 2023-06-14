@@ -3,15 +3,17 @@
   "version": "0.0.0",
   "description": "Todo App Backend",
   "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts",
-    "lint": "eslint src --ext ts"
+    "lint": "eslint",
+    "vercel-build": ""
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
+    "helmet": "^7.0.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
