@@ -11,7 +11,7 @@ app.use(cors());
 app.use(json());
 
 app.get('/', (_req, res) => {
-  res.json({ message: '🔥🚀☄️' });
+  res.json({ message: '🔥🚀☄️' }).status(200);
 });
 
 // initApi(app);

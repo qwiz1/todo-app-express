@@ -33,10 +33,6 @@ rules:
   '@typescript-eslint/object-curly-spacing':
     - error
     - always
-  '@typescript-eslint/indent':
-    - error
-    - 2
-    - SwitchCase: 1
   '@typescript-eslint/semi':
     - error
     - always
