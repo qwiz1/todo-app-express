@@ -1,0 +1,1 @@
+export { handleErrorMiddleware } from './handle-error/handle-error.middleware';
