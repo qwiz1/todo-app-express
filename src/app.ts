@@ -2,6 +2,8 @@ import express, { json } from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
+import { initApi } from './api';
+import { handleErrorMiddleware } from './middlewares';
 
 const app = express();
 
@@ -14,6 +16,7 @@ app.get('/', (_req, res) => {
   res.json({ message: '🔥🚀☄️' }).status(200);
 });
 
-// initApi(app);
+initApi(app);
 
+app.use(handleErrorMiddleware);
 export default app;
