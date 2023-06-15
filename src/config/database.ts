@@ -2,6 +2,7 @@ import { ENV } from '../common/constants';
 import { DataSource } from 'typeorm';
 
 const AppDataSource = new DataSource({
+  url: ENV.DB.URL,
   host: ENV.DB.HOST,
   port: Number(ENV.DB.PORT),
   logging: ['query', 'error'],
