@@ -5,6 +5,7 @@ config();
 const {
   NODE_ENV,
   PORT,
+  POSTGRES_URL,
   POSTGRES_HOST,
   POSTGRES_PORT,
   POSTGRES_USER,
@@ -19,6 +20,7 @@ const ENV = {
     SERVER_PORT: PORT,
   },
   DB: {
+    URL: POSTGRES_URL,
     NAME: POSTGRES_DB_NAME,
     HOST: POSTGRES_HOST,
     PORT: POSTGRES_PORT,
