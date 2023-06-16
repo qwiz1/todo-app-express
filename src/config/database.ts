@@ -12,7 +12,7 @@ const AppDataSource = new DataSource({
   database: ENV.DB.NAME,
   username: ENV.DB.USER,
   password: ENV.DB.PASSWORD,
-  synchronize: true,
+  ssl: true,
 });
 
 const initializeDBConnection = async (): Promise<void> => {
