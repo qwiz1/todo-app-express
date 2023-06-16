@@ -7,7 +7,7 @@ const AppDataSource = new DataSource({
   port: Number(ENV.DB.PORT),
   logging: ['query', 'error'],
   type: 'postgres',
-  entities: ['dist/**/*.entity.{ts,js}'],
+  entities: ['src/entities/**/*.entity.{ts,js}'],
   migrations: ['dist/migrations/**/*.{ts,js}'],
   database: ENV.DB.NAME,
   username: ENV.DB.USER,
