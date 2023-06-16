@@ -4,5 +4,12 @@
             "source": "/(.*)",
             "destination": "/api"
         }
-    ]
+    ],
+    "git": {
+        "deploymentEnabled": {
+            "main": true,
+            "feature/test": true,
+            "development": true
+        }
+    }
 }
