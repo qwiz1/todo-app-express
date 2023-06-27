@@ -1,7 +1,8 @@
 import { Router } from 'express';
 import { ENV } from '../common/constants';
 import { initTodoApi } from './todo/todo.api';
-import { todoController } from '../controllers';
+import { todoController, authController } from '../controllers';
+import initAuthApi from './auth/auth.api';
 
 const initApi = (app: Router): Router => {
   const apiRouter = Router();
@@ -11,6 +12,11 @@ const initApi = (app: Router): Router => {
   initTodoApi({
     apiRouter,
     todoController,
+  });
+
+  initAuthApi({
+    apiRouter,
+    authController,
   });
 
   return apiRouter;
